@@ -1,7 +1,7 @@
 from selenium import webdriver
 
 browser = webdriver.Chrome()
-browser.get("http://suninjuly.github.io/find_xpath_form")
+browser.get("http://suninjuly.github.io/selects1.html")
 elements = browser.find_elements_by_tag_name("input")
 for element in elements:
     element.send_keys("Мой ответ")
