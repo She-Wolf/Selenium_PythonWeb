@@ -12,7 +12,7 @@ def main():
     value = browser.find_element_by_id("input_value").text
     field = browser.find_element_by_id("answer")
     browser.execute_script("return arguments[0].scrollIntoView(true);", field)
-
+    # Вставить значение переменной
     field.send_keys(ln(value))
     # Выбрать чекбокс
     browser.find_element_by_css_selector("[for='robotCheckbox']").click()
