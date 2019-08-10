@@ -17,8 +17,10 @@ def main():
     time.sleep(5)
     browser.quit()
 
+
 def fillByID(name, text):
     return browser.find_element_by_id(name).send_keys(text)
+
 
 def buttonClick():
     button = browser.find_element_by_css_selector("button.btn")
